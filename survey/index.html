@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>WittenSMP Test form page</title>
+  </head>
+  <body>
+    <div id="intro">
+      <h1 id="title">This is test form page for the WittenSMP</h1>
+
+      <p id="description">
+        This is going to be where my kids will submit ideas for our Minecraft
+        server
+      </p>
+    </div>
+    <section id="main-content">
+      <form action="submit" id="survey-form">
+        <div id="username">
+          <label for="name-label" id="name-label"> Name </label>
+          <input
+            type="text"
+            for="name"
+            id="name"
+            required
+            placeholder="Your name here"
+          />
+        </div>
+        <div id="useremail">
+          <label for="email-label" id="email-label"> E-mail Address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Your email here"
+          />
+        </div>
+        <div id="userage">
+          <label for="number-label" id="number-label"> Age </label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            required
+            placeholder="Age here"
+            min="8"
+            max="50"
+          />
+        </div>
+        <div id="selectionbox">
+          <p id="contactadmin">How do want to contact the Admin?</p>
+          <select name="dropdown" id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Email</option>
+            <option value="2">Discord</option>
+            <option value="3">Text Message</option>
+            <option value="4">Just tell me</option>
+          </select>
+        </div>
+        <div id=""
+        <div id="usercomments">
+          <p>Any additional comments?</p>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div id="submitbutton">
+          <button type="submit"></button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
